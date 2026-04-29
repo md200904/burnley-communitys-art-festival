@@ -1,0 +1,65 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Burnley Community’s Arts Festival – Artists</title>
+</head>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const FONT_KEY = 'bca-site-font';
+        const savedFont = localStorage.getItem(FONT_KEY);
+        if (savedFont) {
+            console.log(savedFont);
+            document.body.style.fontFamily = savedFont;
+        }
+    });
+    </script>
+<body>
+
+    <div class="topnav">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="assets/home.png" alt="Home Button">
+            </a>
+            <a class="active" href="artists.html">
+                <img src="assets/artists.png" alt="Artists Button">
+            </a>
+            <a href="events.html">
+                <img src="assets/events.png" alt="Events Button">
+            </a>
+            <a href="contact.html">
+                <img src="assets/contact.png" alt="Contact Button">
+            </a>
+            <a href="settings.html">
+                <img src="assets/settings.png" alt="Settings Button">
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <img src="assets/logo.png" alt="Logo Image">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="artist-card">
+            <div class="artist-name">Jen Orpin</div>
+            <img src="assets/Art1.jpg" alt="Art 1">
+            <p class="description">Manchester's endless supply of superficially mundane urban landscapes and imbuing them with charm and grandeur.</p>
+        </div>
+        <div class="artist-card">
+            <div class="artist-name">Ian Rayer Smith</div>
+            <img src="assets/Art2.jpg" alt="Art 2">
+            <p class="description">A contemporary expressionist painter from New Islington, Ian Rayer Smith foregrounds raw emotion in his uniquely abstract pieces.</p>
+        </div>
+        <div class="artist-card">
+            <div class="artist-name">Baiba Auria</div>
+            <img src="assets/Art3.jpg" alt="3">
+            <p class="description">Working both digitally and with oil, Egoiste Gallery founder Baiba Auria renders her own celebrity portraits in prismatic, trigonal segments bursting with colour.</p>
+        </div>
+    </div>
+    <footer>
+        <p class="p3">© 2025 Max Dugdale All rights reserved</p>
+    </footer>
+
+</body>
+</html>

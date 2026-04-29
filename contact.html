@@ -1,0 +1,80 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<head>
+    <title>Burnley Community’s Arts Festival – Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const FONT_KEY = 'bca-site-font';
+        const savedFont = localStorage.getItem(FONT_KEY);
+        if (savedFont) {
+            console.log(savedFont);
+            document.body.style.fontFamily = savedFont;
+        }
+    });
+    </script>
+<body>
+
+    <div class="topnav">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="assets/home.png" alt="Home Button">
+            </a>
+            <a href="artists.html">
+                <img src="assets/artists.png" alt="Artists Button">
+            </a>
+            <a href="events.html">
+                <img src="assets/events.png" alt="Events Button">
+            </a>
+            <a class="active" href="contact.html">
+                <img src="assets/contact.png" alt="Contact Button">
+            </a>
+            <a href="settings.html">
+                <img src="assets/settings.png" alt="Settings Button">
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <img src="assets/logo.png" alt="Logo Image">
+        </div>
+    </div>
+
+    <header class="contact-header">
+        <h2>Burnley Community's Art Festival</h2>
+        <p>Contact</p>
+    </header>
+
+    <main class="contact-panel">
+        <form action="https://formspree.io/f/xgowwddk" method="POST" class="contact-form">
+            <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="_replyto" type="email" required>
+            </div>
+
+            <div class="form-row">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text">
+            </div>
+
+            <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="7" required></textarea>
+            </div>
+            </div>
+
+            <button type="submit" class="contact-submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p class="p3">© 2025 Max Dugdale All rights reserved</p>
+    </footer>
+
+</body>
+</html>

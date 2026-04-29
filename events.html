@@ -1,0 +1,81 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<head>
+    <title>Burnley Community’s Arts Festival – Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const FONT_KEY = 'bca-site-font';
+        const savedFont = localStorage.getItem(FONT_KEY);
+        if (savedFont) {
+            console.log(savedFont);
+            document.body.style.fontFamily = savedFont;
+        }
+    });
+    </script>
+<body>
+
+    <div class="topnav">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="assets/home.png" alt="Home Button">
+            </a>
+            <a href="artists.html">
+                <img src="assets/artists.png" alt="Artists Button">
+            </a>
+            <a class="active" href="events.html">
+                <img src="assets/events.png" alt="Events Button">
+            </a>
+            <a href="contact.html">
+                <img src="assets/contact.png" alt="Contact Button">
+            </a>
+            <a href="settings.html">
+                <img src="assets/settings.png" alt="Settings Button">
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <img src="assets/logo.png" alt="Logo Image">
+        </div>
+    </div>
+
+    <header class="events-header">
+        <h2>Burnley Community's Art Festival</h2>
+        <p>Events</p>
+    </header>
+
+    <main class="events-panel">
+        <div class="events-side-image">
+            <img src="assets/events_left.jpg" alt="Events side image left">
+        </div>
+
+        <div class="events-center">
+            <div class="event-box">
+                <div class="event-title">Come join in with our wonderful events!</div>
+            </div>
+            <div class="event-box event-desc">
+                <div class="event-title">Burnley's Community Art Festival offers a large range of events for different demographics throughout the year, read below to learn more about locations and dates.</div>
+            </div>
+            <div class="event-box">
+                <div class="event-title">The Art Gallery and Marching Band</div>
+            </div>
+            <div class="event-box event-desc">
+                <div class="event-title">Throughout the week of 04/05/26 through to 11/05/26, we will be offering a chance to look at art from some of our incredible local artists in the Artists section of the website completely free of charge, bring your children and friends. This event will be taking place at Burnley's Town Centre with signs there to guide the way.
+                    Come watch the Burnley Marching Band walk through Burnley's city centre and hear the trumpets being played! Begins 5 PM 01/05/26.
+ </div>
+ 
+            </div>
+        </div>
+
+        <div class="events-side-image">
+            <img src="assets/events_right.jpg" alt="Events side image right">
+        </div>
+    </main>
+
+    <footer>
+        <p class="p3">© 2025 Max Dugdale All rights reserved</p>
+    </footer>
+
+</body>
+</html>

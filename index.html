@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burnley Community’s Arts Festival - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const FONT_KEY = 'bca-site-font';
+    const savedFont = localStorage.getItem(FONT_KEY);
+    if (savedFont) {
+        document.body.style.fontFamily = savedFont;
+    }
+});
+</script>
+
+<div class="topnav">
+    <div class="nav-left">
+        <a class="active" href="index.html"><img src="assets/home.png" alt="Home Button"></a>
+        <a href="artists.html"><img src="assets/artists.png" alt="Artists Button"></a>
+        <a href="events.html"><img src="assets/events.png" alt="Events Button"></a>
+        <a href="contact.html"><img src="assets/contact.png" alt="Contact Button"></a>
+        <a href="settings.html"><img src="assets/settings.png" alt="Settings Button"></a>
+    </div>
+
+    <div class="nav-right">
+        <img src="assets/logo.png" alt="Logo Image">
+    </div>
+</div>
+
+<div class="home-container">
+
+    <div class="home-header">
+        <h2>Burnley Community's Art Festival</h2>
+        <p>The artist & maker community of Burnley</p>
+    </div>
+
+    <div class="home-grid">
+        <div class="text-box-index">
+            <p>Burnley's Community Arts Festival is a group of events that look to showcase the vast life of arts and crafts in Burnley, showcasing local artists and more.</p>
+        </div>
+
+        <div class="text-box-2-index">
+            <p>All events are listed in the events section for you to look at, along with images from some of our events and helpful indicators on the time, date and place of said events.</p>
+        </div>
+
+        <div class="image-area-index">
+            <img src="assets/home-image.jpg" alt="Festival Image">
+        </div>
+
+        <div class="map-container-index">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37710.03150797491!2d-2.2912395047048677!3d53.79167723981792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b9042f0923d57%3A0x4feaa828ce73e4cb!2sBurnley!5e0!3m2!1sen!2suk!4v1765790044515!5m2!1sen!2suk"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p class="p3">© 2025 Max Dugdale All rights reserved</p>
+</footer>
+
+</body>
+</html>
